@@ -1,5 +1,5 @@
 using System;
-using it_academy;
+using It_academy;
 using Xunit;
 
 namespace TestProject
@@ -24,7 +24,7 @@ namespace TestProject
         public void Calculate_AIsZero_NoRoot()   //D < 0
         {
             // arrange
-            var cut = new it_academy.CalculateSquareRoots();
+            var cut = new CalculateSquareRootsAcc();
 
             // act
             cut.Calculate(0, 0, 0);
@@ -37,7 +37,7 @@ namespace TestProject
         public void Calculate_BisZeroAisNotZeroCisNotZero_NoRoot()   
         {
             // arrange
-            var cut = new it_academy.CalculateSquareRoots();
+            var cut = new CalculateSquareRootsAcc();
 
             // act
             cut.Calculate(1, 0, 1);
@@ -50,7 +50,7 @@ namespace TestProject
         public void Calculate_BSquareLess4ac_NoRoot()
         {
             // arrange
-            var cut = new it_academy.CalculateSquareRoots();
+            var cut = new CalculateSquareRootsAcc();
 
             // act
             cut.Calculate(0.25f, 1, 1.1f);
@@ -63,7 +63,7 @@ namespace TestProject
         public void Calculate_BisZero_OneRoot()
         {
             // arrange
-            var cut = new it_academy.CalculateSquareRoots();
+            var cut = new CalculateSquareRootsAcc();
 
             // act
             cut.Calculate(0.25f, 1, 1f);
@@ -76,7 +76,7 @@ namespace TestProject
         public void Calculate_BisZero_TwoRoot()
         {
             // arrange
-            var cut = new it_academy.CalculateSquareRoots();
+            var cut = new CalculateSquareRootsAcc();
 
             // act
             cut.Calculate(2, 10, 2);
