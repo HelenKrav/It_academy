@@ -72,6 +72,19 @@ namespace TestProject
             Assert.Equal(RootExistanceEnum.OneRoot, cut.rootExistance);
         }
 
+        [Fact]
+        public void Calculate_BisZero_TwoRoot()
+        {
+            // arrange
+            var cut = new it_academy.CalculateSquareRoots();
+
+            // act
+            cut.Calculate(2, 10, 2);
+
+            // assert
+            Assert.Equal(RootExistanceEnum.TwoRoot, cut.rootExistance);
+        }
+
 
 
 
