@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculateSquareRoots", "Cal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\TestProject.csproj", "{32FDB5FF-127B-4270-AA24-0F9356CED726}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversionRoman", "ConversionRoman\ConversionRoman.csproj", "{A0692F4C-94DF-449A-B0A6-D1631B412546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleNumbers", "SimpleNumbers\SimpleNumbers.csproj", "{E484AD37-2031-4D41-9ECD-2142EB884F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingAarraySymbol", "GeneratingAarraySymbol\GeneratingAarraySymbol.csproj", "{2B417F73-D0CA-4CC8-9A8D-4C951640C96B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{32FDB5FF-127B-4270-AA24-0F9356CED726}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32FDB5FF-127B-4270-AA24-0F9356CED726}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32FDB5FF-127B-4270-AA24-0F9356CED726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0692F4C-94DF-449A-B0A6-D1631B412546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0692F4C-94DF-449A-B0A6-D1631B412546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0692F4C-94DF-449A-B0A6-D1631B412546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0692F4C-94DF-449A-B0A6-D1631B412546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E484AD37-2031-4D41-9ECD-2142EB884F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E484AD37-2031-4D41-9ECD-2142EB884F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E484AD37-2031-4D41-9ECD-2142EB884F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E484AD37-2031-4D41-9ECD-2142EB884F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B417F73-D0CA-4CC8-9A8D-4C951640C96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B417F73-D0CA-4CC8-9A8D-4C951640C96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B417F73-D0CA-4CC8-9A8D-4C951640C96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B417F73-D0CA-4CC8-9A8D-4C951640C96B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using Xunit;
 
 namespace TestProject
 {
-    public class UnitTest1
+    public class UnitTestCalculateSquareRoots
     {
         /*
          ax2 + bx + c = 0
