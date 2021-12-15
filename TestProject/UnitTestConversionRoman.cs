@@ -6,16 +6,43 @@ namespace TestProject
     public class UnitTestConversionRoman
     {
         [Fact]
-        public void Calculate_AIsZero_NoRoot()   //D < 0
+        public void ConversionFromRoman3()   
         {
             // arrange
-          //  var cut = new Conv();
+            var con = new ConversionRoman.Conversion();
 
             // act
-         //   cut.Calculate(0, 0, 0);
+            // Объявляем массив
+            char[] myArr = new char[3];
+
+            // Инициализируем каждый элемент массива вручную
+            myArr[0] = 'I';
+            myArr[1] = 'I';
+            myArr[2] = 'I';
+
+            var a = con.Conv(myArr);
 
             // assert
-          //  Assert.Equal(RootExistanceEnum.NoRoot, cut.rootExistance);
+            Assert.Equal(3, a);
+        }
+
+        [Fact]
+        public void ConversionFromRoman9()
+        {
+            // arrange
+            var con = new ConversionRoman.Conversion();
+
+            // act
+            // Объявляем массив
+            char[] myArr = new char[2];
+
+            // Инициализируем каждый элемент массива вручную
+            myArr[0] = 'I';
+            myArr[1] = 'X';
+            var a = con.Conv(myArr);
+
+            // assert
+            Assert.Equal(9, a);
         }
     }
 }

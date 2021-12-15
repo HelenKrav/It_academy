@@ -6,16 +6,6 @@ using System.Threading.Tasks;
 
 namespace ConversionRoman
 {
-    public enum RomanNumericEnum
-    {
-        I,
-        V,
-        X,
-        L,
-        C,
-        D,
-        M
-    }
     public class Conversion
     {
         public int Conv(char[] romanArray)
