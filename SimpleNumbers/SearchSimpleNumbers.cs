@@ -11,12 +11,12 @@ namespace SimpleNumbersFrom
 
     public class SearchSimpleNumbers
     {
-        public void Search(string numberFromConcole)
+        public int Search(int numberFromConcole)
         {
             int count = 0;
-            int number_int = Convert.ToInt32(numberFromConcole); 
+            //int number_int = Convert.ToInt32(numberFromConcole); 
             
-            for (int num = 2; num <= number_int; num++) //прошагиваем каждое число их диапазона 
+            for (int num = 2; num <= numberFromConcole; num++) //прошагиваем каждое число их диапазона 
                 {
                     bool b = true;
                     for (int j = 2; j < num; j++)
@@ -31,7 +31,7 @@ namespace SimpleNumbersFrom
                         count++;
                     }
                 }
-            Console.WriteLine(count);
+            return count;
         }
     }
 }

@@ -8,11 +8,11 @@ namespace SimpleNumbers
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число");
-            string a = Console.ReadLine();
+            int a = Convert.ToInt32(Console.ReadLine());
 
             var  simple = new SearchSimpleNumbers();
             Console.WriteLine("Количество простых чисел из диапазона 1-"+a);
-            simple.Search(a);
+            Console.WriteLine( simple.Search(a));
 
             
         }

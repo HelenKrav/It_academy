@@ -53,10 +53,7 @@ namespace GeneratingAarraySymbol
                 {
                     Console.WriteLine(mass[i]);
                 }
-            }
-            
-            
-
+            }        
         }
     }
 }
