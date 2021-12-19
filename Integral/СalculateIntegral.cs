@@ -22,31 +22,41 @@ namespace Integral
 
     internal class СalculateIntegral
     {
-        public const int a = -10;
-        public const int b = 10;
+        public const int start = -10;
+        public const int end = 10;
 
-        public const string urov1 = "2*x+4";
-        public const string urov2 = "2*x^2-10";
-        public static string urov3 = "x^3";
         
-        public double Calculate(Func<double, double> func)
+        public static double Calculate(Func<double, double> func, double a, double b, int n, int accuracy)
         {
-            for(int i = 10; i < 2;i +=10)
+            var acc =  accuracy/100d;
+            var sum = 0d;
+            var result2 = 0d;
+            var result = 0d;
+            int g = 1;
+            
+            for (int i = 0; i < 1;i++)
             {
-              var sInterval = Func(0);
+                var h = (b - a) / n;
+                for (var j = 0; j <= n - 1; j++)
+                {
+                    var x = a + j * h;
+                    sum += Math.Round(func(x), 2);  // сумма всех площадей на n отрезках
+                }
+                result = Math.Round(h * sum, 2); 
+                if (Math.Abs(result - result2) > acc) //сбрасывем всё и ищем следующщий результат при N*2 
+                { 
+                    n *= 2;
+                    result2 = result;
+                    sum = 0;
+                    i--;
+                    g++;
+                }
             }
-            //double result = Convert.ToDouble(new DataTable().Compute("1 + 2 * 7", null));
-          //  Console.WriteLine(result);
-            return 0;
+            Console.WriteLine($"Accuracy is {accuracy} %");
+            Console.WriteLine($"Step is {n}");
+            Console.WriteLine($"Count iteration is {g}");
+            return result;
         }
-
-        public double Func(double x)
-        {
-            return 2*x+10;
-
-        }
-        
-
 
 
 
