@@ -6,14 +6,14 @@ namespace Integral
 {
     internal class Program
     {
-        public const double start = -10;
+        public const double start = -10; 
         public const double end = 10;
         public const int n = 2; //количество отрезков
         public static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            Console.WriteLine($"---------INTEGRAL----------------");
+            Console.WriteLine($"---------INTEGRAL-------------");
             Console.WriteLine("Enter function with param х :");
                 var str = Console.ReadLine();
                 if (String.IsNullOrEmpty(str))

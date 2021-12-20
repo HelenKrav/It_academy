@@ -43,7 +43,7 @@ namespace Integral
                     sum += Math.Round(func(x), 2);  // сумма всех площадей на n отрезках
                 }
                 result = Math.Round(h * sum, 2); 
-                if (Math.Abs(result - result2) > acc) //сбрасывем всё и ищем следующщий результат при N*2 
+                if (Math.Abs(result - result2) > acc) //сбрасывем всё и ищем следующщий результат при n*2 
                 { 
                     n *= 2;
                     result2 = result;
