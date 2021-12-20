@@ -30,7 +30,7 @@ namespace Integral
         {
             var acc =  accuracy/100d;
             var sum = 0d;
-            var result2 = 0d;
+            var resultInterval = 0d;
             var result = 0d;
             int g = 1;
             
@@ -42,11 +42,11 @@ namespace Integral
                     var x = a + j * h;
                     sum += Math.Round(func(x), 2);  // сумма всех площадей на n отрезках
                 }
-                result = Math.Round(h * sum, 2); 
-                if (Math.Abs(result - result2) > acc) //сбрасывем всё и ищем следующщий результат при n*2 
+                resultInterval = Math.Round(h * sum, 2); 
+                if (result==0 || Math.Abs(resultInterval - result)/result > acc) //сбрасывем всё и ищем следующщий результат при n*2 
                 { 
                     n *= 2;
-                    result2 = result;
+                    result = resultInterval;
                     sum = 0;
                     i--;
                     g++;
