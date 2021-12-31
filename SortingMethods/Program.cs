@@ -45,19 +45,6 @@ namespace SortingMethods
             TimeSpan spanFromQuick = sw.Elapsed;
             Console.WriteLine($"Time {spanFromQuick}");
             Console.WriteLine("----------------------");
-
-
-            //var arrayForQuickMethodMedian = array;
-            //Console.WriteLine("____QuickSort - Median_________");
-            //var methodQuickMedian = new Sorting();
-            //sw.Reset();
-            //sw.Start();
-            //var resultMethodQuickMedian = methodQuick.SortingQuickPivotLamuto_Median(arrayForQuickMethodMedian, 0, arrayForQuickMethodMedian.Length - 1);
-            //sw.Stop();
-            //TimeSpan spanFromQuickMedian = sw.Elapsed;
-            //Console.WriteLine($"Time {spanFromQuickMedian}");
-            //Console.WriteLine("----------------------");
-
         }
     }
 }
