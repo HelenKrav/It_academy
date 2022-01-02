@@ -18,6 +18,7 @@
     <ProjectReference Include="..\ConversionRoman\ConversionRoman.csproj" />
     <ProjectReference Include="..\GeneratingAarraySymbol\GeneratingAarraySymbol.csproj" />
     <ProjectReference Include="..\SimpleNumbers\SimpleNumbers.csproj" />
+    <ProjectReference Include="..\SortingMethods\SortingMethods.csproj" />
   </ItemGroup>
 
 </Project>
